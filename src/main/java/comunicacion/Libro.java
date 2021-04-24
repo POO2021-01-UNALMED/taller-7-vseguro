@@ -13,11 +13,18 @@ public class Libro extends Escrito {
 		this.edicion=edicion;
 		this.interpretacion=interpretacion;
 	}
-	public int palabrasTotales(int x) {}
+	public int palabrasTotales(int x) {
+		return getPaginas()*2*x;
+	}
     
-	public String interpretacion() {}
+	public String interpretacion() {
+		return interpretacion;
+	}
 	
-	public String toString() {}
+	public String toString() {
+		return getOrigen()+ "\n"+ getTitulo()+ "\n"+ getAutor()+ "\n"+getPaginas()+ "\n"+
+	    co_autor + "\n"+ editorial + "\n"+ edicion+ "\n";
+	}
 
 	public String getCo_autor() {
 		return co_autor;

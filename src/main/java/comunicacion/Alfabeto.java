@@ -3,27 +3,42 @@ package comunicacion;
 import java.util.ArrayList;
 
 public class Alfabeto extends Pictograma {
-	private String [] letras;
+	private static String [] letras;
 	private String interpretacion;
 	
 	public Alfabeto(String origen,String [] letras, String interpretacion ) {
 		super(origen);
-		this.letras=letras;
+		Alfabeto.letras=letras;
 		this.interpretacion=interpretacion;
 	}
 	
-	public int cantidadLetras() {}
+	public int cantidadLetras() {
+		return letras.length;
+	}
 	
-	public String interpretacion() {}
-	
-	public String toString() {}
+	public String interpretacion() {
+		return  interpretacion ;
+	}
+	//probar
+	public String toString() {
+		String l = " ";
+		for(int i=0; i<letras.length;i++){
+			
+			if (i==letras.length-1) {
+				l += letras[i]; 
+				break;
+			}
+			l += letras[i]+ ", " ;	
+		}
+		return l;
+	}
 
-	public String[] getLetras() {
+	public static String[] getLetras() {
 		return letras;
 	}
 
-	public void setLetras(String[] letras) {
-		this.letras = letras;
+	public static void setLetras(String[] letras) {
+		Alfabeto.letras = letras;
 	}
 
 	public String getInterpretacion() {
@@ -34,7 +49,6 @@ public class Alfabeto extends Pictograma {
 		this.interpretacion = interpretacion;
 	}
 
-	//get y set
 	
 	
 }

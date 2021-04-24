@@ -9,11 +9,17 @@ public class Fabula extends Escrito{
 		this.ensenanza=ensenanza;
 		this.interpretacion=interpretacion;
 	}
-    public int palabrasTotales(int x) {}
+    public int palabrasTotales(int x) {
+    	return x*getPaginas();
+    }
     
-	public String interpretacion() {}
+	public String interpretacion() {
+		return interpretacion;
+	}
 	
-	public String toString() {}
+	public String toString() {
+		return getOrigen()+ "\n"+ getTitulo()+ "\n"+ getAutor()+ "\n"+getPaginas()+ "\n"+ ensenanza;
+	}
 
 	public String getEnsenanza() {
 		return ensenanza;

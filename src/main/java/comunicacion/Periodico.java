@@ -13,12 +13,16 @@ public class Periodico extends Escrito {
 		
 	}
 	public int palabrasTotales(int x) {
+		return x*getPaginas()*10;
 	}
 
 	public String interpretacion() {
+		return interpretacion;
 	}
 
 	public String toString() {
+		return getOrigen()+ "\n"+ getTitulo()+ "\n"+ getAutor()+ "\n"+getPaginas()+ "\n"+ fecha+ "\n"+
+	    primicia;
 	}
 
 	public String getFecha() {
