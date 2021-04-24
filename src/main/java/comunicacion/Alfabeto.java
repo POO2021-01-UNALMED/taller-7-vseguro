@@ -18,11 +18,11 @@ public class Alfabeto extends Pictograma {
 	
 	public String toString() {}
 
-	public String getLetras() {
+	public String[] getLetras() {
 		return letras;
 	}
 
-	public void setLetras(String letras) {
+	public void setLetras(String[] letras) {
 		this.letras = letras;
 	}
 

@@ -31,14 +31,12 @@ public class Tesis extends Escrito{
 		this.idea = idea;
 	}
 
-	public ArrayList<String> getArgumentos() {
+	public String[] getArgumentos() {
 		return argumentos;
 	}
-
-	public void setArgumentos(ArrayList<String> argumentos) {
+	public void setArgumentos(String[] argumentos) {
 		this.argumentos = argumentos;
 	}
-
 	public String getConclusion() {
 		return conclusion;
 	}
